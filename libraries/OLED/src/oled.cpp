@@ -20,7 +20,7 @@ OLED::OLED(int num) : m_SPInum(num)
 	}
 	else if (this->m_SPInum == 2)
 	{
-		m_cDCPin = GPIO(13);
+		m_cDCPin = GPIO(12);
 		m_cDCPin.exportGPIO();
 		usleep(1000);
 		m_cDCPin.setDirection(0);
