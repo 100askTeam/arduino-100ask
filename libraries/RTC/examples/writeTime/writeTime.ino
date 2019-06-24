@@ -36,22 +36,22 @@
 
 int main(int argc, char **argv)
 {
-	RTC rtc(1);
-	
-	rtc.year = 2019;
-	rtc.month = 6;
-	rtc.day = 3;
-	rtc.week = 1;
+    RTC rtc(1);
+    
+    rtc.year = 2019;
+    rtc.month = 6;
+    rtc.day = 3;
+    rtc.week = 1;
 
-	rtc.hour = 23;	
-	rtc.minute = 59;
-	rtc.second = 57;
-	
-	rtc.setTime();
-	
-	while(1)
-	{
-		rtc.timePrintf();
-		sleep(1);
-	} 
+    rtc.hour = 23;  
+    rtc.minute = 59;
+    rtc.second = 57;
+    
+    rtc.setTime();
+    
+    while(1)
+    {
+        rtc.timePrintf();
+        sleep(1);
+    } 
 }

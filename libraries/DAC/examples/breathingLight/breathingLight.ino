@@ -18,23 +18,23 @@
 
 int main(int argc, char **argv)
 {
-	DAC dac(1);
-	float vol = 1.7;//vol range: 0 ~ 4.092
+    DAC dac(1);
+    float vol = 1.7;//vol range: 0 ~ 4.092
 
-	while(1)
-	{
-		while(vol < 3.6) //逐渐变亮
-		{
-			dac.setVoltage(vol);
-			vol = vol + 0.01;
-			msleep(5);
-		}
-		
-		while(vol > 1.7) //逐渐变暗
-		{
-			dac.setVoltage(vol);
-			vol = vol - 0.01;
-			msleep(5);
-		}
-	}	
+    while(1)
+    {
+        while(vol < 3.6) //逐渐变亮
+        {
+            dac.setVoltage(vol);
+            vol = vol + 0.01;
+            msleep(5);
+        }
+        
+        while(vol > 1.7) //逐渐变暗
+        {
+            dac.setVoltage(vol);
+            vol = vol - 0.01;
+            msleep(5);
+        }
+    }   
 }

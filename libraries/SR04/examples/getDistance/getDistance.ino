@@ -16,12 +16,12 @@
 
 int main(int argc, char **argv)
 {
-	SR04 sr04;
+    SR04 sr04;
 
-	while(1)
-	{
-		cout << "distance: " << sr04.getDistance() << "cm" <<endl;
-		msleep(200);
-	}
+    while(1)
+    {
+        cout << "distance: " << sr04.getDistance() << "cm" <<endl;
+        msleep(200);
+    }
 }
 

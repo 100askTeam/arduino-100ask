@@ -9,20 +9,20 @@
 #define UART3_PATH  "/dev/ttyO3"
 
 class UART {
-	private:
-		string m_sPath;
-		int m_iFile;
-		//设置串口参数
-		
-	public:
-		UART();
-		UART(int num);
-		~UART(void);
-		
-		int setUART(void);
-		
-		int sendData(char *data, int len);
-		int reviceData(char *data, int len);
+    private:
+        string m_sPath;
+        int m_iFile;
+        //设置串口参数
+        
+    public:
+        UART();
+        UART(int num);
+        ~UART(void);
+        
+        int setUART(void);
+        
+        int sendData(char *data, int len);
+        int reviceData(char *data, int len);
 };
 
 #endif 

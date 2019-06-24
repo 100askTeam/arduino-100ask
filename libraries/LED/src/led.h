@@ -10,13 +10,13 @@
 
 
 class LED : public GPIO {
-	public:
+    public:
 
-		LED(int pin);
-		~LED(void);
-		
-		int on(void);
-		int off(void);
+        LED(int pin);
+        ~LED(void);
+        
+        int on(void);
+        int off(void);
 };
 
 

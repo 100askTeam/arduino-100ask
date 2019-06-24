@@ -17,16 +17,16 @@
 
 int main(int argc, char **argv)
 {
-	ADXL345 adxl345(1);
+    ADXL345 adxl345(1);
 
-	while(1)
-	{
-		adxl345.readData();
-		  
-		cout << "X: " << setw(4) << adxl345.x_value 
-		  <<  "  Y: " << setw(4) << adxl345.y_value 
-		  <<  "  Z: " << setw(4) << adxl345.z_value << endl;
+    while(1)
+    {
+        adxl345.readData();
+          
+        cout << "X: " << setw(4) << adxl345.x_value 
+          <<  "  Y: " << setw(4) << adxl345.y_value 
+          <<  "  Z: " << setw(4) << adxl345.z_value << endl;
 
-		msleep(200);	
-	}
+        msleep(200);    
+    }
 }

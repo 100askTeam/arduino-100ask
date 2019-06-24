@@ -7,17 +7,16 @@
 #define ADC2_PATH  "/sys/devices/platform/ocp/44e0d000.tscadc/TI-am335x-adc/iio:device0/in_voltage5_raw"
 
 class ADC {
-	private:
-		string m_sPath;
-		int m_iFile;
-		int m_iValue;
+    private:
+        string m_sPath;
+        int m_iFile;
+        int m_iValue;
 
-	public:
-		ADC(int num);
-		~ADC(void);
-		
-		int getValue(void);
+    public:
+        ADC(int num);
+        ~ADC(void);
+        
+        int getValue(void);
 };
 
-	
 #endif

@@ -8,15 +8,15 @@
 
 class DAC : public SPI {
 private:
-	float m_fVoltage;
-	int m_SPInum;
-		
+    float m_fVoltage;
+    int m_SPInum;
+        
 public:
-	DAC(int num = 0);
-	virtual int setVoltage(float vol = 0);
-	virtual int setVoltage(int vol = 0);
-	virtual ~DAC();
+    DAC(int num = 0);
+    virtual int setVoltage(float vol = 0);
+    virtual int setVoltage(int vol = 0);
+    virtual ~DAC();
 };
 
-	
+    
 #endif

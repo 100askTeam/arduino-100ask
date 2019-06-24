@@ -18,14 +18,14 @@
 
 int main(int argc, char **argv)
 {
-	DH11 dh11(GPIO0);
+    DH11 dh11(GPIO0);
 
-	while(1)
-	{
-		cout << "Temperature: " << dh11.readTemperature() << "'C" << endl;
-		cout << "Humdity: " << dh11.readHumdity() << "%" << endl;
+    while(1)
+    {
+        cout << "Temperature: " << dh11.readTemperature() << "'C" << endl;
+        cout << "Humdity: " << dh11.readHumdity() << "%" << endl;
 
-		sleep(1);
-	}
+        sleep(1);
+    }
 }
 

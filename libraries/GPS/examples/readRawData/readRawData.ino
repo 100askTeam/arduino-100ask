@@ -18,13 +18,13 @@
 
 int main(int argc, char **argv)
 {
-	GPS gps(2);
-	
-	while(1)
-	{
-		memset(gps.RawData,0,sizeof(gps.RawData));
-		
-		if(gps.readRawData(gps.RawData))
-			cout << gps.RawData << endl;	
-	}	
+    GPS gps(2);
+    
+    while(1)
+    {
+        memset(gps.RawData,0,sizeof(gps.RawData));
+        
+        if(gps.readRawData(gps.RawData))
+            cout << gps.RawData << endl;    
+    }   
 }

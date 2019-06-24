@@ -11,21 +11,21 @@
 #define IRDA_EVENT_PATH   "/dev/input/event3"
 
 class IRDA  {
-	private:
-		int m_iPin;
-		string m_sPath;
-		int m_iFileIRDA;
-		int m_iFileEvent;
-		
-	public:	
-		int code;
-		int value;
-	
-	public:
-		IRDA(void);
-		IRDA(int pin);
-		virtual int readKey(void);
-		~IRDA(void);
+    private:
+        int m_iPin;
+        string m_sPath;
+        int m_iFileIRDA;
+        int m_iFileEvent;
+        
+    public: 
+        int code;
+        int value;
+    
+    public:
+        IRDA(void);
+        IRDA(int pin);
+        virtual int readKey(void);
+        ~IRDA(void);
 };
 
 

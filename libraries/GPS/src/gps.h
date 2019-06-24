@@ -6,17 +6,17 @@
 #include "uart.h"
 
 class GPS : public UART {
-	private:
+    private:
 
-	public:
-		char RawData[256];
-	
-		GPS(int num);
-	    ~GPS();
-		virtual int readRawData(char *data);
-		virtual int printfAnalyzeData();
+    public:
+        char RawData[256];
+    
+        GPS(int num);
+        ~GPS();
+        virtual int readRawData(char *data);
+        virtual int printfAnalyzeData();
 
 };
 
-	
+    
 #endif

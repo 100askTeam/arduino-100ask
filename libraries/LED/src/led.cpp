@@ -3,25 +3,25 @@
 
 LED::LED(int pin)
 {
-	setPin(pin);
-	
-	exportGPIO();
-	usleep(25000);
-	
-	setDirection(0);
+    setPin(pin);
+    
+    exportGPIO();
+    usleep(25000);
+    
+    setDirection(0);
 }
 
 LED::~LED(void)
 {
-	unexportGPIO();
+    unexportGPIO();
 }
 
 int LED::on(void)
 {
-	return setValue(0);
+    return setValue(0);
 }
 
 int LED::off(void)
 {
-	return setValue(1);
+    return setValue(1);
 }

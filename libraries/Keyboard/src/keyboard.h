@@ -11,18 +11,18 @@
 #define KEYBOARD_EVENT_PATH   "/dev/input/event1"
 
 class KEYBOARD  {
-	private:
-		string m_sPath;
-		int m_iFileEvent;
-		
-	public:	
-		int code;
-		int value;
-	
-	public:
-		KEYBOARD();
-		virtual int readKey(void);
-		~KEYBOARD(void);
+    private:
+        string m_sPath;
+        int m_iFileEvent;
+        
+    public: 
+        int code;
+        int value;
+    
+    public:
+        KEYBOARD();
+        virtual int readKey(void);
+        ~KEYBOARD(void);
 };
 
 

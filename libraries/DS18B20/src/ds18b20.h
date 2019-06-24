@@ -11,7 +11,7 @@
 
 
 struct ds18b20_value_msg {
-	unsigned char value[2];
+    unsigned char value[2];
 };
 
 struct ds18b20_info_msg {
@@ -23,21 +23,21 @@ struct ds18b20_info_msg {
 
 
 class DS18B20  {
-	private:
-		int m_iPin;
-		string m_sPath;
-		int m_iFile;
-	
-	public:
-		DS18B20();
-		DS18B20(int pin);
-		
-		virtual float readTemperature(void);
-		virtual int readFamilyCode(void);
-		virtual int readCRC(void);
-		virtual void readSerialNum(unsigned char* array);
-		
-		~DS18B20(void);
+    private:
+        int m_iPin;
+        string m_sPath;
+        int m_iFile;
+    
+    public:
+        DS18B20();
+        DS18B20(int pin);
+        
+        virtual float readTemperature(void);
+        virtual int readFamilyCode(void);
+        virtual int readCRC(void);
+        virtual void readSerialNum(unsigned char* array);
+        
+        ~DS18B20(void);
 };
 
 

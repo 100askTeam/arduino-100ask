@@ -16,10 +16,10 @@
 
 int main(int argc, char **argv)
 {
-	GPS gps(2);
-	
-	while(1)
-	{	
-		gps.printfAnalyzeData();	
-	}	
+    GPS gps(2);
+    
+    while(1)
+    {   
+        gps.printfAnalyzeData();    
+    }   
 }

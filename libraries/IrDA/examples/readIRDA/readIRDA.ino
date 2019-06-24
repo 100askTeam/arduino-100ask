@@ -44,13 +44,13 @@
 
 int main(int argc, char **argv)
 {
-	IRDA irda(GPIO0);
-	
-	while(1)
-	{
-		irda.readKey();
-		
-		cout << "Code:" << irda.code << " Value:" << irda.value << endl;
-	}
+    IRDA irda(GPIO0);
+    
+    while(1)
+    {
+        irda.readKey();
+        
+        cout << "Code:" << irda.code << " Value:" << irda.value << endl;
+    }
 }
 

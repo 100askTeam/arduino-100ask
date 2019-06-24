@@ -16,11 +16,11 @@
 
 int main(int argc, char **argv)
 {
-	ADC adc(1);
-	
-	while(1)
-	{
-		cout << "voltage: " << adc.getValue() << endl;
-		sleep(1);
-	}
+    ADC adc(1);
+    
+    while(1)
+    {
+        cout << "voltage: " << adc.getValue() << endl;
+        sleep(1);
+    }
 }

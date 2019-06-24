@@ -5,12 +5,12 @@
 #include "gpio.h"
 
 class SR501 : public GPIO {
-	public:
-		SR501();
-		SR501(int pin);
-		~SR501(void);
-		
-		virtual int getSignal(void);
+    public:
+        SR501();
+        SR501(int pin);
+        ~SR501(void);
+        
+        virtual int getSignal(void);
 };
 
 #endif

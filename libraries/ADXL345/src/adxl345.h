@@ -19,24 +19,24 @@ struct adxl34x_info_msg {
 
 
 class ADXL345 {
-	private:
-		string m_sPath;
-		int m_iCS;
-		int m_iEventFile;
-		int m_iAdxl345File;
-	
-	public:	
-		int touch_value;	
+    private:
+        string m_sPath;
+        int m_iCS;
+        int m_iEventFile;
+        int m_iAdxl345File;
+    
+    public: 
+        int touch_value;    
 
-		int x_value;	
-		int y_value;
-		int z_value;
-		
-	public:
-		ADXL345(int num);
-		virtual int readData(void);
-		virtual ~ADXL345();
+        int x_value;    
+        int y_value;
+        int z_value;
+        
+    public:
+        ADXL345(int num);
+        virtual int readData(void);
+        virtual ~ADXL345();
 };
 
-	
+    
 #endif

@@ -17,11 +17,11 @@
 
 int main(int argc, char **argv)
 {
-	RTC rtc(1);
-	
-	while(1)
-	{
-		rtc.timePrintf();
-		sleep(1);
-	} 
+    RTC rtc(1);
+    
+    while(1)
+    {
+        rtc.timePrintf();
+        sleep(1);
+    } 
 }

@@ -20,20 +20,20 @@
 
 int main(int argc, char **argv)
 {
-	int i;
-	unsigned char SerialNum[6];
-	
-	DS18B20 ds18b20(GPIO0);
-	
-	ds18b20.readSerialNum(SerialNum);
-	cout << "SerialNum: ";
-	for (i=0; i<6; i++)
-		cout << (int)SerialNum[i];
-	cout << endl;
-	
-	cout << "Temperature: " << ds18b20.readTemperature() << endl;
-	cout << "FamilyCode: " <<  ds18b20.readFamilyCode() << endl;
-	cout << "CRC: " <<  ds18b20.readCRC() << endl;
+    int i;
+    unsigned char SerialNum[6];
+    
+    DS18B20 ds18b20(GPIO0);
+    
+    ds18b20.readSerialNum(SerialNum);
+    cout << "SerialNum: ";
+    for (i=0; i<6; i++)
+        cout << (int)SerialNum[i];
+    cout << endl;
+    
+    cout << "Temperature: " << ds18b20.readTemperature() << endl;
+    cout << "FamilyCode: " <<  ds18b20.readFamilyCode() << endl;
+    cout << "CRC: " <<  ds18b20.readCRC() << endl;
 }
 
 

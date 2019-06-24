@@ -17,17 +17,17 @@
 
 int main(int argc, char **argv)
 {
-	ADXL345 adxl345(1);
+    ADXL345 adxl345(1);
 
-	while(1)
-	{
-		adxl345.readData();
-		
-		while(adxl345.touch_value == 0)
-		{
-			adxl345.readData();
-			if(adxl345.touch_value == 1)
-				cout << "You hit it" << endl;
-		}
-	}
+    while(1)
+    {
+        adxl345.readData();
+        
+        while(adxl345.touch_value == 0)
+        {
+            adxl345.readData();
+            if(adxl345.touch_value == 1)
+                cout << "You hit it" << endl;
+        }
+    }
 }

@@ -15,19 +15,19 @@ struct dh11_value_msg {
 
 
 class DH11  {
-	private:
-		int m_iPin;
-		string m_sPath;
-		int m_iFile;
-	
-	public:
-		DH11();
-		DH11(int pin);
-		
-		virtual int readTemperature(void);
-		virtual int readHumdity(void);
-		
-		~DH11(void);
+    private:
+        int m_iPin;
+        string m_sPath;
+        int m_iFile;
+    
+    public:
+        DH11();
+        DH11(int pin);
+        
+        virtual int readTemperature(void);
+        virtual int readHumdity(void);
+        
+        ~DH11(void);
 };
 
 

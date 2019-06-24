@@ -10,26 +10,26 @@
 #define PM  0
 
 class RTC : public I2C {
-	public:	
-		unsigned int year;
-		unsigned char month;
-		unsigned char day;
-		unsigned char week; //0~6
-		unsigned char hour;
-		unsigned char minute;
-		unsigned char second;
+    public: 
+        unsigned int year;
+        unsigned char month;
+        unsigned char day;
+        unsigned char week; //0~6
+        unsigned char hour;
+        unsigned char minute;
+        unsigned char second;
 
-		const char *week_string[7] = {"Sun","Mon","Tue","Wed","Thur", "Fri","Sat"};
-		
-		virtual void rx8025Init(void);
+        const char *week_string[7] = {"Sun","Mon","Tue","Wed","Thur", "Fri","Sat"};
+        
+        virtual void rx8025Init(void);
 
-	public:
-		RTC(int num);
-		virtual int readTime(void);
-		virtual int setTime(void);
-		virtual int timePrintf(void);
-		virtual ~RTC();
+    public:
+        RTC(int num);
+        virtual int readTime(void);
+        virtual int setTime(void);
+        virtual int timePrintf(void);
+        virtual ~RTC();
 };
 
-	
+    
 #endif

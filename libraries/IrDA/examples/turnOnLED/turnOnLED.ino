@@ -20,19 +20,19 @@
 
 int main(int argc, char **argv)
 {
-	LED led(LED4); 
-	led.off();
+    LED led(LED4); 
+    led.off();
 
-	IRDA irda(GPIO0);
-	
-	while(1)
-	{
-		irda.readKey();
-		
-		//如果KEY_1按下，或者长按，打开LED4
-		if((irda.code == KEY_1) && (irda.value == 1 || irda.value == 2)) 
-			led.on();
-		else
-			led.off();
-	}
+    IRDA irda(GPIO0);
+    
+    while(1)
+    {
+        irda.readKey();
+        
+        //如果KEY_1按下，或者长按，打开LED4
+        if((irda.code == KEY_1) && (irda.value == 1 || irda.value == 2)) 
+            led.on();
+        else
+            led.off();
+    }
 }

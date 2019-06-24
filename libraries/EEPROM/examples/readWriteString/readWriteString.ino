@@ -19,12 +19,12 @@
 
 int main(int argc, char **argv)
 {
-	string txString = "www.100ask.org";
-	string rxString;
+    string txString = "www.100ask.org";
+    string rxString;
 
-	EEPROM eeprom(1);
+    EEPROM eeprom(1);
 
-	eeprom.writeEEPROM(0, txString.size(), txString);
-	eeprom.readEEPROM(0, txString.size(), &rxString);
-	cout << "rxString: " << rxString << endl;
+    eeprom.writeEEPROM(0, txString.size(), txString);
+    eeprom.readEEPROM(0, txString.size(), &rxString);
+    cout << "rxString: " << rxString << endl;
 }

@@ -19,18 +19,18 @@
 
 int main(int argc, char **argv)
 {
-	LED led(LED4); 
+    LED led(LED4); 
 
-	KEYBOARD keyboard;
-	
-	while(1)
-	{
-		keyboard.readKey();
-		
-		//如果KEY4按下，或者长按，关闭LED4
-		if((keyboard.code == KEY4) && (keyboard.value == 1 || keyboard.value == 2)) 
-			led.off();
-		else
-			led.on();
-	}
+    KEYBOARD keyboard;
+    
+    while(1)
+    {
+        keyboard.readKey();
+        
+        //如果KEY4按下，或者长按，关闭LED4
+        if((keyboard.code == KEY4) && (keyboard.value == 1 || keyboard.value == 2)) 
+            led.off();
+        else
+            led.on();
+    }
 }

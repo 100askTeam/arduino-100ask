@@ -16,16 +16,16 @@
 
 int main(int argc, char **argv)
 {
-	LED led(LED4);
+    LED led(LED4);
 
-	while(1)
-	{
-		led.on();  
-		sleep(1);
-			
-		led.off(); 
-		sleep(1);
-	}
+    while(1)
+    {
+        led.on();  
+        sleep(1);
+            
+        led.off(); 
+        sleep(1);
+    }
 }
-	
+    
 

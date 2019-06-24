@@ -12,21 +12,21 @@
 
 class I2C {
 private:
-	static int m_iUseCount;
-	string m_sPath;
-	static int m_iFile;
-	
-	
+    static int m_iUseCount;
+    string m_sPath;
+    static int m_iFile;
+    
+    
 public:
-	unsigned int m_iDevAddr;
-	
-	I2C();
-	I2C(string bus, unsigned int dev);
-	virtual unsigned char readRegister(unsigned int registerAddress);
-	virtual unsigned char readRegister(unsigned int registerAddress, int count, unsigned char* buf);
-	virtual int writeRegister(unsigned int registerAddress, unsigned char value);
-	virtual int writeRegister(unsigned int registerAddress, int count, unsigned char* buf);
-	virtual ~I2C();
+    unsigned int m_iDevAddr;
+    
+    I2C();
+    I2C(string bus, unsigned int dev);
+    virtual unsigned char readRegister(unsigned int registerAddress);
+    virtual unsigned char readRegister(unsigned int registerAddress, int count, unsigned char* buf);
+    virtual int writeRegister(unsigned int registerAddress, unsigned char value);
+    virtual int writeRegister(unsigned int registerAddress, int count, unsigned char* buf);
+    virtual ~I2C();
 };
 
 
