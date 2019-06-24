@@ -2,6 +2,7 @@
 #define _DH11_H
 
 #include <Arduino.h>
+#include <gpio.h>
 
 #define DH11_IOC_MAGIC    'd'
 #define DH11_IOCINIT      _IOW(DH11_IOC_MAGIC, 0, int)

@@ -14,6 +14,7 @@
 * 4. 调用readEEPROM读EEPROM，参数为：待读起始地址、待读字符串长度、待保存位置；
 * 5. 打印接收的数据，观察是否和写的数据一致；  
 */
+#include <Arduino.h>
 #include <eeprom.h>
 
 int main(int argc, char **argv)

@@ -18,9 +18,7 @@ class RTC : public I2C {
 		unsigned char hour;
 		unsigned char minute;
 		unsigned char second;
-		
-		unsigned char h12;
-		unsigned char am;
+
 		const char *week_string[7] = {"Sun","Mon","Tue","Wed","Thur", "Fri","Sat"};
 		
 		virtual void rx8025Init(void);

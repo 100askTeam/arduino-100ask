@@ -2,6 +2,7 @@
 #define _DS18B20_H
 
 #include <Arduino.h>
+#include <gpio.h>
 
 #define DS18B20_IOC_MAGIC    'd'
 #define DS18B20_IOCINIT      _IOW(DS18B20_IOC_MAGIC, 0, int)

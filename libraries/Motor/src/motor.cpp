@@ -3,12 +3,10 @@
 
 MOTOR::MOTOR()
 {
-
-	
 	this->m_iPin1 = 6;
 	this->m_iPin2 = 7;
-	this->m_iPin3 = 13;
-	this->m_iPin4 = 50;
+	this->m_iPin3 = 12;
+	this->m_iPin4 = 52;
 
 	this->m_iSpeed = 4*2; 
 

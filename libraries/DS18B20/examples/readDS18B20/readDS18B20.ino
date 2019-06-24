@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	int i;
 	unsigned char SerialNum[6];
 	
-	DS18B20 ds18b20;
+	DS18B20 ds18b20(GPIO0);
 	
 	ds18b20.readSerialNum(SerialNum);
 	cout << "SerialNum: ";

@@ -16,7 +16,7 @@
 
 int main(int argc, char **argv)
 {
-	SR501 sr501;
+	SR501 sr501(GPIO0);
 
 	while(1)
 	{

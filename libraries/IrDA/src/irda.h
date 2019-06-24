@@ -2,6 +2,7 @@
 #define _IRDA_H
 
 #include <Arduino.h>
+#include <gpio.h>
 
 #define IRDA_IOC_MAGIC    'i'
 #define IRDA_IOCINIT      _IOW(IRDA_IOC_MAGIC, 0, int)

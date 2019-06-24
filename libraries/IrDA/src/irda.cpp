@@ -3,7 +3,7 @@
 
 IRDA::IRDA()
 {	
-	this->m_iPin = 0*32+6;
+	this->m_iPin = 0*32+6; //GPIO0
 	this->m_sPath = IRDA_PATH;
 	
 	this->m_iFileIRDA = open(this->m_sPath.c_str(), O_RDWR);
