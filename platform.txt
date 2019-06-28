@@ -7,8 +7,8 @@ version=1.1.1
 # Compile tool path
 
 
-compiler.path={runtime.tools.gcc-arm-linux-gnueabihf-6.2.1.path}/bin/
-runtime.tools.toolchain.prefix=arm-linux-gnueabihf-
+compiler.path={runtime.tools.gcc-aarch64-linux-gnu-6.3.1.path}/bin/
+runtime.tools.toolchain.prefix=aarch64-linux-gnu-
 
 compiler.c.cmd={runtime.tools.toolchain.prefix}gcc
 compiler.cpp.cmd={runtime.tools.toolchain.prefix}g++
