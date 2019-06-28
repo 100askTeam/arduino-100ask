@@ -89,7 +89,7 @@ recipe.size.regex.data=^(?:\.data|\.rodata|\.bss)\s+([0-9]+).*
 
 # ------------------------------
 
-tools.copy.path={runtime.tools.gcc-arm-linux-gnueabihf-6.2.1.path}/bin/
+tools.copy.path={runtime.tools.gcc-aarch64-linux-gnu-6.3.1.path}/bin/
 tools.copy.cmd=copy
 tools.copy.cmd.windows=copy.bat
 tools.copy.upload.params.verbose= -d
